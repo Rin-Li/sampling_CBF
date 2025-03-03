@@ -4,11 +4,11 @@ This method explores the integration of sampling-based techniques with Control B
 
 ## Sampling-Based Optimization
 
-The sampling-based method iteratively optimizes a simple policy modeled as a time-independent Gaussian distribution with parameters $ \phi_t $, which represent the sequence of means $ \mu_t $ and covariances $ \boldsymbol{\Sigma}_t $ at each time step.
+The sampling-based method iteratively optimizes a simple policy modeled as a time-independent Gaussian distribution with parameters $\phi_t$, which represent the sequence of means $\mu_t$ and covariances $\boldsymbol{\Sigma}_t$ at each time step.
 
 At each iteration, the optimization follows these steps:
 1. Sample a batch of $ N $ control sequences, $u$, from the current distribution.
-2. Roll out the approximate dynamics function using the sampled controls to obtain a batch of corresponding states $ x $ and costs $ c $.
+2. Roll out the approximate dynamics function using the sampled controls to obtain a batch of corresponding states $x$ and costs $c$.
 
 ## Novel Cost Function Based on Angular Relations
 
@@ -19,9 +19,9 @@ C(\theta_1, \theta_2) = \alpha_1(1 - \sigma(2(x - 90)) ||90 - x||) + \alpha_2 \t
 $$
 
 where:
-- $ \theta_1 \in [0, 180^\circ] $ represents the angle between the obstacle and the vector $ x_{t+1} - x_t $.
-- $ \theta_2 \in [0, 180^\circ] $ represents the angle between the goal and the vector $ x_{t+1} - x_t $.
-- $ \alpha_1 $ and $ \alpha_2 $ are positive scalars.
+- $\theta_1 \in [0, 180^\circ]$ represents the angle between the obstacle and the vector $x_{t+1} - x_t$.
+- $\theta_2 \in [0, 180^\circ]$ represents the angle between the goal and the vector $x_{t+1} - x_t$.
+- $\alpha_1$ and $\alpha_2$ are positive scalars.
 
 ## Updating Mean and Covariance
 
@@ -35,14 +35,14 @@ $$
 $$
 
 where:
-- $ \alpha_\mu $ and $ \alpha_\sigma $ are step sizes that regulate updates relative to the previous values.
-- $ w_i $ is computed as:
+- $\alpha_\mu$ and $\alpha_\sigma$ are step sizes that regulate updates relative to the previous values.
+- $w_i$ is computed as:
 
 $$
 w_i = \exp \left( \frac{-1}{\beta} C(\alpha_1, \alpha_2) \right)
 $$
 
-To enhance diversity in the sampling process, noise is added to the covariance matrix. The best control input $ u_{t+1} $ is then selected as $ \mu_{t+1} $.
+To enhance diversity in the sampling process, noise is added to the covariance matrix. The best control input $u_{t+1}$ is then selected as $\mu_{t+1}$.
 
 ## Ensuring Safe Navigation with CBF
 
@@ -53,8 +53,8 @@ $$
 $$
 
 where:
-- $ h(x) $ represents the safe set, ensuring it remains non-negative.
-- The function $ h(x) $ can be formulated as a distance function to an obstacle.
+- $h(x)$ represents the safe set, ensuring it remains non-negative.
+- The function $h(x)$ can be formulated as a distance function to an obstacle.
 - Only the closest obstacle is considered rather than all obstacles in the region.
 
 ## Example: Single Integrator System
