@@ -62,6 +62,9 @@ where:
 As a simple demonstration, consider a single integrator system where the method is applied to navigate safely while optimizing the control policy.
 <img src="https://github.com/user-attachments/assets/3e6ee143-27fd-4662-875d-1e01127c3b15" style="width:70%;">
 
+## Reference:
+1. Bhardwaj, Mohak, et al. "Storm: An integrated framework for fast joint-space model-predictive control for reactive manipulation." Conference on Robot Learning. PMLR, 2022.
+
 
 
 
