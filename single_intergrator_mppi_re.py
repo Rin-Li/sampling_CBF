@@ -82,7 +82,7 @@ def animate_simulation(newStates, start, goal, obs_center, obs_radii, sampled_us
         plt.scatter(start[0], start[1], s=200, color="green", alpha=0.75, label="start")
         plt.scatter(goal[0], goal[1], s=200, color="purple", alpha=0.75, label="target")
 
-        plt.title('Simulation Result for Siganl Integrator')
+        plt.title('Simulation Result for Single Integrator')
         plt.xlabel('X ')
         plt.ylabel('Y ')
         plt.grid()
