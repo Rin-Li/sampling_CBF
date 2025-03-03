@@ -14,9 +14,9 @@ At each iteration, the optimization follows these steps:
 
 A novel loss function is introduced to incorporate the angular relationship between obstacles and the goal:
 
-'''math
+```math
 C(\theta_1, \theta_2) = \alpha_1(1 - \sigma(2(x - 90)) ||90 - x||) + \alpha_2 \theta_2
-'''
+```
 
 where:
 - $\theta_1 \in [0, 180^\circ]$ represents the angle between the obstacle and the vector $x_{t+1} - x_t$.
