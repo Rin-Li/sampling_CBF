@@ -60,6 +60,7 @@ where:
 ## Example: Single Integrator System
 
 As a simple demonstration, consider a single integrator system where the method is applied to navigate safely while optimizing the control policy.
+<img src="![simulation](https://github.com/user-attachments/assets/a1ece87f-6177-45aa-83e2-a6d2df1c09a9)" style="width:80%;">
 
 
 
