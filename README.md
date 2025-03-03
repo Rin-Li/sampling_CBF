@@ -7,7 +7,7 @@ This method explores the integration of sampling-based techniques with Control B
 The sampling-based method iteratively optimizes a simple policy modeled as a time-independent Gaussian distribution with parameters $ \phi_t $, which represent the sequence of means $ \mu_t $ and covariances $ \boldsymbol{\Sigma}_t $ at each time step.
 
 At each iteration, the optimization follows these steps:
-1. Sample a batch of $ N $ control sequences, $ u $, from the current distribution.
+1. Sample a batch of $ N $ control sequences, $u$, from the current distribution.
 2. Roll out the approximate dynamics function using the sampled controls to obtain a batch of corresponding states $ x $ and costs $ c $.
 
 ## Novel Cost Function Based on Angular Relations
