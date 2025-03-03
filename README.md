@@ -35,11 +35,11 @@ $$
 $$
 
 where:
-- $ \alpha_\mu $ and $ \alpha_\sigma $ are step sizes that regulate updates relative to the previous values.
-- $ w_i $ is computed as:
+- $\alpha_\mu$ and $\alpha_\sigma$ are step sizes that regulate updates relative to the previous values.
+- $w_i$ is computed as:
 
 $$
-w_i = \exp \left( \frac{-1}{\beta} C(\alpha_1, \alpha_2) \right)
+w_i = \exp \left( \frac{-1}{\beta} C(\theta_1, \theta_2) \right)
 $$
 
 To enhance diversity in the sampling process, noise is added to the covariance matrix. The best control input $u_{t+1}$ is then selected as $\mu_{t+1}$.
