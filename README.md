@@ -59,8 +59,12 @@ where:
 
 ## Example: Single Integrator System
 
-As a simple demonstration, consider a single integrator system where the method is applied to navigate safely while optimizing the control policy.
-<img src="https://github.com/user-attachments/assets/a1ece87f-6177-45aa-83e2-a6d2df1c09a9" style="width:80%;">
+As a simple demonstration, consider a single integrator system where the method is applied to navigate safely while optimizing the control policy. 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a1ece87f-6177-45aa-83e2-a6d2df1c09a9" width="40%" />
+  <img src="https://github.com/user-attachments/assets/67d00697-e6f6-4a2a-b62e-ba2bb191c749" width="40%" />
+</p>
+
 
 
 
