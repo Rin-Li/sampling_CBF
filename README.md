@@ -11,7 +11,7 @@ As a simple demonstration, consider a single integrator system where the method 
 </p>
 
 ## Example: Path Planning in Configuration Space
-We refer to the paper "Configuration Space Distance Fields for Manipulation Planning" (RSS 2024). In this example, we use the CDF (Configuration Distance Field) method proposed in the paper to calculate the distance and gradient in the configuration space. These are then used as inputs for the sampling-based CBF (Control Barrier Function) method to achieve efficient and constraint-aware path planning.
+We refer to the paper "Configuration Space Distance Fields for Manipulation Planning" (RSS 2024). In this example, we use the CDF method proposed in the paper to calculate the distance and gradient in the configuration space. These are then used as inputs for the sampling-based CBF method to achieve efficient and constraint-aware path planning.
 <p align="center">
   <img src="./robot_animation.gif" alt="Path Planning Animation" width="100%" />
 </p>
